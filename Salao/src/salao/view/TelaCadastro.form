@@ -323,7 +323,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Confirmar"/>
+        <Property name="text" type="java.lang.String" value="Ir para agendamento"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -127,7 +127,7 @@ public class TelaCadastro extends javax.swing.JFrame {
 
         jButton4.setText("Salvar");
 
-        jButton5.setText("Confirmar");
+        jButton5.setText("Ir para agendamento");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
