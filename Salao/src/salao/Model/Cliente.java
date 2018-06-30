@@ -21,8 +21,6 @@ public class Cliente {
     public String toString() {
         return id + " - " + nome + " - " + telefone + " - " + email + " - " + datanasc ;
     }
-    
-    
 
     public int getId() {
         return id;
@@ -63,5 +61,6 @@ public class Cliente {
     public void setDatanasc(String datanasc) {
         this.datanasc = datanasc;
     }
+
     
 }

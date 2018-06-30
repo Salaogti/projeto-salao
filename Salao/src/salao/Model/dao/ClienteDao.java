@@ -30,12 +30,9 @@ public class ClienteDao implements IntefaceDao<Cliente>{
     
     @Override
     public void inserir(Cliente objT) throws SQLException {
-        String sql = "INSERT INTO cliente (nome_cli, tel_cli, email_cli, datanasc_cli) values (?)";
+        String sql = "INSERT INTO cliente (nome_cli) values (?)";
         PreparedStatement ps = conex.getConexao().prepareStatement(sql);
         ps.setString(1, objT.getNome());
-        ps.setString(2, objT.getTelefone());
-        ps.setString(3, objT.getEmail());
-        ps.setString(4, objT.getDatanasc());        
         ps.execute();
     }
 
