@@ -282,25 +282,29 @@ public class TelaCadastro extends javax.swing.JFrame {
 
     private void btn_salvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_salvarActionPerformed
         String nome = cp_nome.getText();
-        String cpf = cp_cpf.getText();
+        String id = cp_cpf.getText();
+        String tel = cp_telefone.getText();
         String dtn = cp_dtn.getText();
         String email = cp_email.getText();
-        //System.out.println("Nome informado é: "+nome);
-
-        //se cancelou..
+        
+        
+       // int a = Integer.parseInt(id); // CONVERTE A STRING EM INT, TENTEI MSM ASSIM DA ERRO
+                
+            
         if (nome == null) {
-            return; //isso é igual a abortar operação
+            return; 
         }
         
         Cliente c = new Cliente();
         c.setNome(nome);
-        c.setNome(cpf);
-        c.setNome(dtn);
-        c.setNome(email);
+        c.setId(id); // ERRO AQUI QUANDO EXECUTA
+        c.setTelefone(tel);
+        c.setDatanasc(dtn);
+        c.setEmail(email);
         
         String valido = new ClienteControle( c ).ValidaCliente();
 
-        //Verifica se o resultado é diferente de OK, sendo mostra a mensagem
+        
         if ( ! valido.equals("OK") ) {
             JOptionPane.showMessageDialog(rootPane, valido );
             return;
